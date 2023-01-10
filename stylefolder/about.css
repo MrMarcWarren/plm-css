@@ -1,0 +1,367 @@
+body{
+    background: linear-gradient(#0c0c0c, #141414);
+    min-height: 100vh;
+    overflow-x: hidden;
+    
+}
+.asec1{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.yes-no-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-no-button a{
+    border: none;
+    color: #fafafa;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    border-radius: 20px;
+    margin: 10px;
+    font-weight: 700;
+    z-index: 3;
+    cursor:pointer;
+    transition: 0.5s ease-in;
+    text-transform: uppercase;
+}
+
+.yes-no-button a:hover{
+    transform: scale(1.15);
+}
+
+#yes-btn{
+    background-color: #ffbb00;
+}
+
+#no-btn{
+    background-color: #0f2259;
+}
+
+
+.asec1 img{
+    height: 100%;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.asec1 .about-button{
+    width: 100%;
+    position: absolute;
+    overflow: visible;
+    z-index: 1;
+    padding-top: 25%;
+}
+
+.asec1 .about-button p{
+    text-align: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: default;
+    margin: 10px;
+    transition: 0.5s ease-in;
+    text-transform: uppercase;
+}
+
+.question2{
+    overflow: hidden;
+    height: 20vh;
+}
+
+.question2 a{
+    display: inline-block;
+    background-color: #ffbb00;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 6px 24px;
+    border-radius: 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    text-transform: uppercase;
+}
+
+.question2 a:hover{
+    background-color: #001a63;
+    transform: scale(1.05);
+}
+
+.next{
+    text-align: center;
+    font-size: 3em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.asec2{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.asec2 video{
+
+    opacity: 100%;
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+
+.asec3 video{
+
+    opacity: 55%;
+    width: auto;
+    height: 175vh;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.titlerow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 2s ease;
+}
+
+.titlerow.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.title-text h1{
+    color: #0f2259;
+    font-size: 3.5em;
+    font-weight: 800;
+}
+
+.title-text p{
+    color: #0c0c0c;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.title-text span{
+    font-weight: 600;
+}
+
+.arow1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 70px;
+    cursor: default;
+
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 2s ease;
+}
+
+.arow1.active{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.arow1 img{
+    border-radius: 20px;
+    max-width: 500px;
+    float: left;
+    margin-right: 25px;
+    transition: 1s;
+}
+.arow1 img:hover{
+    filter: hue-rotate(-160deg);
+}
+.about-text-1{
+    background-color: #0c0c0c;
+    
+    padding: 20px 40px;
+    border-radius: 15px;
+}
+
+.about-text-1 h1{
+    color: #ffbb00;
+    font-size: 3em;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+.about-text-1 h1:hover{
+    filter: hue-rotate(90deg);
+}
+
+.about-text-1 p{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.asec2-btn{
+    text-align: center;
+    height: 20vh;
+    padding-top: 20px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 2s ease;
+}
+
+.asec2-btn.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.asec2-btn a{
+    padding: 12px 32px;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    background-color: #0f2259;
+    border-radius: 20px;
+}
+
+.asec2-btn a:hover{
+    color: #ffbb00;
+}
+
+.asec3{
+    background: rgba(17, 24, 80, 0.8);
+    height: 175vh;
+    overflow: hidden;
+}
+
+.officer-titlerow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.officer-title-text p{
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.officer-title-text h1{
+    color: #ffbb00;
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.officer-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    padding-bottom: 50px;
+    overflow-y: hidden;
+
+
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: all 2s ease;
+}
+
+.officer-container.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card{
+    border: #ffffff 2px solid;
+    border-radius: 20px;
+    height: 500px;
+    width: 375px;
+    overflow: hidden;
+    margin: 50px;
+}
+.officer-container img{
+    height: 500px;
+}
+
+.officer-details{
+    height: 100px;
+    width: 375px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+
+.officer-details h1{
+    color: #ffbb00;
+    font-weight: 700;
+    font-size: 2em;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.officer-details p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.officer-bottomrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.officer-bottom-text h1{
+    color: #ffffff;
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+
+

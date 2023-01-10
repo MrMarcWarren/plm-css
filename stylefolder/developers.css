@@ -1,0 +1,259 @@
+
+
+
+body{
+    background: linear-gradient(#0c0c0c, #141414);
+    overflow: hidden;
+
+
+}
+
+.dev-sec1{
+    height: 100vh;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sec1-div1{
+    margin: auto;
+    max-width: 1000px;
+
+    width: 100%;
+
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec1-div1 h1{
+    font-size: 3em;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.sec1-div1 h1:hover{
+    font-size: 3.2em;
+}
+.sec1-div1 a{
+    font-size: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #ffbb00;
+    transition: 0.5s;
+}
+
+.sec1-div1 a:hover{
+    font-size: 1.2em;
+}
+
+.dev-sec1 video{
+    opacity: 40%;
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+.dev-sec2{
+    height: 190vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dev-sec2 video{
+    opacity: 15%;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: grayscale(100);
+}
+
+
+
+.dev-sec2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dev-sec2::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.titlerow{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: default;
+    
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 2s ease;
+}
+
+.titlerow.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.title-text h1{
+    color: #ffbb00;
+    font-size: 5em;
+    font-weight: 800;
+}
+
+.title-text p{
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.title-text span{
+    font-weight: 600;
+}
+
+.team-container{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    cursor: default;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 2s ease;
+}
+
+.team-container.active{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.team-container .flashcard{
+    position: relative;
+    width: 315px;
+    height: 450px;
+    background: #252525;
+    margin: 20px;
+    border:#535353 2px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.team-container .flashcard .content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.team-container .flashcard:hover .content{
+    opacity: 0.05;
+    transform: scale(1.1);
+}
+
+.content .image-box{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.content .image-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details-box h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.4em;
+}
+
+.details-box h2 span{
+    color: #ffbb00;
+    font-size: 0.75em;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.flashcard .description{
+    position: absolute;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+    top: 50px;
+
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.flashcard:hover .description{
+    transform: translateY(-20px);
+    opacity: 1;
+}
+
+.flashcard .description p{
+    margin: 0 10px;
+    font-size: 1em;
+    transform: translateY(40px);
+    color: #ffffff;
+    text-align: center;
+    text-transform: initial;
+
+}
+
+.flashcard .description span{
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #ffbb00;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+

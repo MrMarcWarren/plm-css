@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+main{
+    animation: transitionIn 2s;
+}
+
+@keyframes transitionIn
+{
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    .row1.active{
+        display: block;
+        text-align: center;
+    }
+    .row1 img{
+        margin-left: 0;
+        padding-top: 10%;
+    }
+    .row2.active{
+        display: block;
+        text-align: center;
+    }
+    .row2 img{
+        margin-right: 0;
+        padding-bottom: 10%;
+    }
+
+    .text-box{
+        width: 90%;
+    }
+    .text-box h1{
+        font-size: 3.5em;
+    }
+
+    .sec2{
+        height: 200vh;
+    }
+
+    .sec3{
+        height: 200vh;
+    }
+
+    .image-cards{
+        flex: 100%;
+        max-width: 400px;
+    }
+
+    .sec1-div1{
+        display: block;
+        text-align: center;
+    }
+
+    .dev-sec2{
+        height: 800vh;
+    }
+
+    .esec2{
+        background: linear-gradient(#ffffff, #a3a3a3);
+        height: 600vh;
+    }
+
+    .ediv1 label{
+        display: flex;
+        margin: 0 3px;
+        padding: 0;
+    }
+
+    .photo-gallery{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+@media only screen and (max-width: 1100px){
+
+    .asec1 .about-button{
+        padding-top: 50%;
+    }
+
+    .asec2{
+        height: 200vh;
+    }
+
+    .asec3{
+        height: 475vh;
+    }
+
+    .asec3 video{
+        opacity: 0%;
+    }
+
+    .officer-container{
+        width: 80%;
+        margin: auto;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-left: auto;
+    }
+    .officer-details{
+        opacity: 0;
+
+    }
+
+}
