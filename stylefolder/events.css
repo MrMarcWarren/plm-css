@@ -12,10 +12,11 @@ body{
 
 .esec1 video{
     opacity: 50%;
-    width: auto;
+    width: 100%;
     height: 100%;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
     
     filter: hue-rotate(50deg);
 }
@@ -85,9 +86,10 @@ body{
     font-weight: 600;
 }
 
+
 .esec2{
     background: linear-gradient(#ffffff, #a3a3a3);
-    height: 185vh;
+    height: 195vh;
 }
 
 input{
