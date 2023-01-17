@@ -50,11 +50,12 @@ body{
     font-size: 1.2em;
 }
 
+
 .dev-sec1 video{
     opacity: 40%;
     width: 100%;
     object-fit: cover;
-    height: auto;
+    height: 100vh;
     position: absolute;
     z-index: -1;
 }
@@ -62,9 +63,10 @@ body{
 
 
 .dev-sec2{
-    height: 190vh;
+    height: 200vh;
     position: relative;
     overflow: hidden;
+   
 
     display: flex;
     justify-content: center;
@@ -255,6 +257,7 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
+
 
 
 
