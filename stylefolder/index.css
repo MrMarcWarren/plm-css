@@ -69,10 +69,11 @@ body{
 
 .sec1 video{
     opacity: 25%;
-    width: auto;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
 }
 
 /*
@@ -111,10 +112,11 @@ body{
 .sec2 video{
 
     opacity: 100%;
-    width: auto;
+    width: 100%;
     height: 100vh;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
 
 }
 .row1{
@@ -230,8 +232,8 @@ body{
     background: linear-gradient(#0f2259, #000b2b);
 }
 
+
 .sec3{
-    padding: 30px;
     padding-top: 100px;
 }
 
